@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    line-height: 1.5em; 
+    font-family: 'Lato', sans-serif;
+}
+
+#box{
+    padding: 40px 0;
+    background-color: #0077B6;
+    color:white;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+#box h1{
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+#box input[type = "text"], #box input[type = "password"]{
+    border:0;
+    background: none;
+    border: 2px solid #CAF0F8;
+    color: #CAF0F8;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+#box input[type = "text"]:focus, #box input[type = "password"]:focus{
+    background-color: #CAF0F8;
+    color: #03045E;
+    width:250px;
+}
+
+#box input[type = "submit"]{
+    border:0;
+    background: none;
+    border: 2px solid #CAF0F8;
+    color: white;
+    display:block;
+    margin: 20px auto 0;
+    text-align: center;
+    padding: 14px 10px;
+    outline: none;
+    width:100px;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#box p a{
+  color: white;
+}
+
+#box p a:hover{
+  color: white;
+  font-size: large;
+  transition: font-size 0.2s ease;
+  line-height: 10%;
+}
+
+#box input[type = "submit"]:hover{
+    background-color: #CAF0F8;
+    color: #03045E;
+}
+
+/* text inside forms */
+:focus::placeholder {
+    color: #0077B6;
+}
+::placeholder{
+  color:#90E0EF; 
+}
+
+/* Animation, also need to change color */
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: white;
+  }
+  100% {
+    background: #CAF0F8;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: white;
+  }
+  100% {
+    background: #CAF0F8;
+  }
+}
+
+@media (max-width: 330px) {
+    #box{
+        width: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+  #box{
+      width: 250px;
+  }
+}

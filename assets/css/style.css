@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap');
+
+/* Fonts
+LATO:
+Thin 100
+Thin 100 italic
+Light 300
+Light 300 italic
+Regular 400
+Regular 400 italic
+Bold 700
+Bold 700 italic
+*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+.w100 {
+font-weight: 100;
+}
+.w300 {
+font-weight: 300;
+}
+.w400 {
+font-weight: 400;
+}
+.w700 {
+font-weight: 700;
+}
+.w900 {
+font-weight: 500;
+}
+
+body { 
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   color: #343a40;
+}
+.content {
+   flex: 1;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+
+.navbar .navbar-brand {
+    font-family: 'Lobster', cursive; 
+}
+
+.bg-blue {
+    /* background-color: #4483b6; */
+    /* background-image: linear-gradient(25deg, #0077B6 40%, #0096C7 90%); */
+    background-image: linear-gradient(25deg, #023047 0%, #219EBC 50%);
+
+}
+
+/* Only in homepage: banner image, toggler, footer */
+.banner-image {
+    background-image: linear-gradient(rgba(255, 183, 3, 0.3), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2906&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2906&q=80'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #4483b6;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+/* All other neccessary components: buttons */
+.btn-primary{
+	background-color: #FB8500;
+	color:white !important;
+	border: solid 2px #FFB703;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+	background-color: white;
+	border: solid 2px #FFB703;
+	color:#FB8500 !important;
+	transition: background-color 0.2s ease-out, color 0.2s;
+}
+
+.btn-secondary{
+	background-color: white ;
+	color:#0077b6 !important;
+	border: solid 2px #017cbe;
+}
+
+.btn-secondary:hover, .btn-secondary:focus{
+	background-color: #0083ca;
+	border: solid 2px #017cbe;
+	color: white !important;
+	transition: background-color 0.2s ease-out, color 0.2s;
+}
+ 
+.btn-block {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.with-hr {
+    padding-bottom: 5px;
+	border-bottom: 2px solid #00B4D8;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    border: #00B4D8 solid 1px;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 90%;
+}
+
+.timetable {
+    height: 330px;
+}
+
+.scroll-jumbotron {
+    overflow-y: auto;   
+    overflow-x: auto;   
+}
+
+.card {
+    border: #00B4D8 solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 90%;
+    width: 100%;
+}
+
+
+/* Forms */
+.alert-no-margin {
+    margin-bottom: 0;
+}
+label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.form-control {
+    border: solid 1px #00B4D8;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 90%;
+}
+
+select {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #00B4D8 60%),
+      linear-gradient(135deg, #00B4D8 40%, transparent 50%) !important;
+    background-position:
+      calc(100% - 30px) 14px,
+      calc(100% - 20px) 14px,
+      100% 0;
+    background-size:
+      10px 10px,
+      10px 10px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+.form-group, .form-control {
+    margin-bottom: 10px;
+}
+
+/* Medias */
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color:#4483b6; 
+    }
+}
+
+@media screen and (max-width: 779px) and (min-width: 575px) {
+    .content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container .jumbotron, .container-fluid .jumbotron {
+        padding: 10px;
+        /* font-size: 70%; */
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .content {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .container .jumbotron, .container-fluid .jumbotron {
+        padding: 10px;
+        /* font-size: 70%; */
+    }
+}

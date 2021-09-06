@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<title>Eightsoft Hospitals</title>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-dark p-md-3 shadow bg-blue" >
+				<div class="container">
+
+					<a class="navbar-brand" href="index.html">Eightsoft.uz</a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+						</ul>
+
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="appointments.html">My
+									appointments</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="new_appointment.html">Create new</a>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Rustam Zokirov
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="#">Profile</a></li>
+									<li><a class="dropdown-item" href="#">Log out</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+
+	<!-- Body  -->
+    <main role="main" class="container content">
+		<h3 class=""><b>My appointments</b></h3>
+		<div class="jumbotron scroll-jumbotron">
+		  	<p class="w200 text-uppercase">The coming queues</p>
+			<table class="table table-hover">
+				<thead>
+				  <tr>
+					<th scope="col">#</th>
+					<th scope="col">Department</th>
+					<th scope="col">Time</th>
+					<th scope="col">Doctor</th>
+					<th scope="col">Edit </th>
+					<th scope="col">Delete </th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">1</th>
+					<th scope="row">Dantist</th>
+					<td scope="row">12:30 August 21, 2021</td>
+					<td scope="row">Rust John</td>
+					<td><button type="button" class="btn btn-success btn-sm">Edit</button></td>
+					<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+				  </tr>
+				</tbody>
+			</table>
+			<h6 class="">You don't have appointments yet. Do you want to create new?</h6>
+		</div>
+
+	</main>
+
+	<!-- Footer -->
+    <footer class="footer bg-blue">
+        <div class="container">
+			<div class="row">
+            	<div>&copy; Eightsoft.uz</div>
+			</div>
+        </div>
+    </footer>
+
+
+	<!-- Optional JavaScript; choose one of the two! -->
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin="anonymous"></script>
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
